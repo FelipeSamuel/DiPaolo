@@ -2,7 +2,7 @@ from DiPaolo import app
 import os
 import json
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://samukajo_root:codigoefotografia12345@felipesamuel.com/samukajobs_dipaolo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://samukajo_root:codigoefotografia12345@felipesamuel.com/samukajobs_dipaolo'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/di_paolo'
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = os.urandom(24)
